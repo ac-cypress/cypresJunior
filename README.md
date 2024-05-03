@@ -1,2 +1,1 @@
 # cypresJunior
-#Aleksandrs

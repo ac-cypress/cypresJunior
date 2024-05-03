@@ -39,7 +39,6 @@ describe('Working with HTML elements', () => {
     cy.get('[value="radio3"]').should('not.be.checked') 
   })
 
-  // Dropdown Example
   it('Dropdown Example', () => { 
     cy.get('select').select('option2').should('have.value', 'option2')
   })

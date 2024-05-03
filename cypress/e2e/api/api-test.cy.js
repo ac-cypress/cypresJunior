@@ -1,8 +1,8 @@
 /// <reference types="cypress" />
 
-describe('API test set', () => {
-    context('First', () => {
-        it.skip('Simple API test 1', () => {
+describe('API test sets', () => {
+    context('First test set', () => {
+        it('Simple API test 1', () => {
             cy.visit('https://www.saucedemo.com/')
             cy.get('[data-test="username"]').type('xxx')
             cy.log('Start API call')
@@ -19,7 +19,7 @@ describe('API test set', () => {
         })
     })
 
-    context('Second', () => {
+    context('Second test set', () => {
         it('Simple API test 2', () => { 
             cy.request('GET', 'https://api.spacexdata.com/v3/missions').then((response) => {
                 expect(response.status).to.eq(200)
